@@ -1,10 +1,4 @@
-
-[![Branches](./badges/badge-branches.svg)]()
-[![Functions](./badges/badge-functions.svg)]()
-[![Lines](./badges/badge-lines.svg)]()
-[![Statements](./badges/badge-statements.svg)]()
-
-# LM Lego Front
+# LM Tube
 
 ## Content
 - <a href="#installation">Installation</a>
