@@ -119,7 +119,6 @@ Necessary applications:
 
 | App name                                                     |
 | ------------------------------------------------------------ |
-| Android Studio                                               |
 | cmd or git bash window (or command prompt from IDE terminal) |
 
 First, start the virtual device from the Android Studio. Then, execute your application:
