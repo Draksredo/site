@@ -1,7 +1,7 @@
 # LM Tube
 
-## Content
-- <a href="#installation">Installation</a>
+## Содержание
+- <a href="#installation">Установка</a>
     - <a href="#global_dependencies">Global dependencies</a>
     - <a href="#ides">IDEs and tools</a>
 - <a href="#setup_and_running">Setup and running</a>
@@ -14,8 +14,8 @@
 - <a href="#contributing">Contributing</a>
 - <a href="https://confluence.lmru.tech/display/NDP/Coding+style+and+standards">Coding style and standards</a> (link to Confluence)
 
-<h1 id="installation">Installation</h1>
-The installation consists of the following software you will need to install on your local machine. It is necessary to install appropriate versions from the list to get evetything at work.
+<h1 id="installation">Установка</h1>
+Установка состоит из следующего программного обеспечения, которое необходимо установить на локальном компьютере.
 
 (Tested on 23 april 2020, Windows 10)
 ![Node](docs/images/badge-node.svg)
