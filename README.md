@@ -124,10 +124,20 @@ First, execute your application:
     $ npm run browser:build
     $ npm run browser:build:serve
     ```
+    
+    Check it after run:
+    ```bash
+    http://localhost:4000/
+    ```
 
 - 2nd terminal - build the application shell for development:
 
     ```
     $ npm run browser:build:dev
+    ```
+    
+    Check it after run:
+    ```bash
+    http://localhost:5000/
     ```
 
