@@ -1,7 +1,7 @@
 # LM Tube
 
-## Содержание
-- <a href="#installation">Установка</a>
+## Content
+- <a href="#installation">Installation</a>
     - <a href="#global_dependencies">Global dependencies</a>
     - <a href="#ides">IDEs and tools</a>
 - <a href="#setup_and_running">Setup and running</a>
@@ -14,10 +14,10 @@
 - <a href="#contributing">Contributing</a>
 - <a href="https://confluence.lmru.tech/display/NDP/Coding+style+and+standards">Coding style and standards</a> (link to Confluence)
 
-<h1 id="installation">Установка</h1>
-Установка состоит из следующего программного обеспечения, которое необходимо установить на локальном компьютере.
+<h1 id="installation">Installation</h1>
+The installation consists of the following software you will need to install on your local machine. It is necessary to install appropriate versions from the list to get evetything at work.
+(Tested on 18 may 2020, Windows 10)
 
-(Tested on 23 april 2020, Windows 10)
 ![Node](docs/images/badge-node.svg)
 ![Npm](docs/images/badge-npm.svg)
 ![React Native Debugger](docs/images/badge-rnd.svg)
@@ -26,15 +26,12 @@
 
 | Necessary software                        | Version                                                    |
 | ----------------------------------------- | ---------------------------------------------------------- |
-| Node.js                                   | 10.13.0                                                    |
-| npm                                       | 6.10.3                                                     |
-| Android Studio                            | any                                                        |
+| Node.js                                   | 12.16.3                                                    |
+| npm                                       | 6.14.4                                                     |
 | React Native Debugger                     | 0.10.0                                                     |
 | Git with git bash command prompt          | any                                                        |
 | IDE (WebStorm or Visual Studio Code)      | any                                                        |
 | **react-native** and **react-native-cli** | latest (will be installed automatically when using script) |
-| jdk                                       | 1.8.0 (Java SE 8)                                          |
-| python2                                   | 2.7.*                                                      |
 
 
 <h2 id="global_dependencies">Global dependencies</h2>
@@ -44,15 +41,15 @@
     ```
     $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
     $ command -v nvm
-    $ nvm install 10.13.0
+    $ nvm install 12.16.3
     ```
 
 - #### Windows
 
-1. Open the page: [https://nodejs.org/download/release/v10.13.0/](https://nodejs.org/download/release/v10.13.0/).
-2. Download the suitable installer (e.g. `node-v10.13.0-x64.msi`) and install it.
+1. Open the page: [https://nodejs.org/download/release/v12.16.3/](https://nodejs.org/download/release/v12.16.3/).
+2. Download the suitable installer (e.g. `node-v12.16.3-x64.msi`) and install it.
 3. Make sure the npm directory (e.g. `C:\Users\user\AppData\Roaming\npm`) is added to `PATH`.
-4. Check the avaliability of node.js: open command prompt(cmd) and type ```node -v```, the result should be ```v10.13.0```
+4. Check the avaliability of node.js: open command prompt(cmd) and type ```node -v```, the result should be ```v12.16.3```
 
 - #### Mac OS
 
