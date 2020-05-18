@@ -96,105 +96,12 @@ $ npm -v
 
 ### VSCode
 1. Download from [here](https://code.visualstudio.com/)
-2. Get plugins: Beautify, ESLint, Flow language support, GitLens
 
 ### JetBrains Webstorm
 
 1. Download from [here](https://www.jetbrains.com/)
-2. Get plugins: GitToolBox, ESLint
-3. Setup linting (really important because of two things: clean-coding and fast linting)
-    - setup FLOW
-    - setup ESLint
-    - [optional] Settings --> Preferences | Editor | Inspections
-        - disable 'Missing module dependency' (for lmui module)
-        - disable all unnecessary lint rules (for fast linting)
-4. Increase memory heap for fast linting and autocompletion ([instruction](https://www.jetbrains.com/help/idea/increasing-memory-heap.html)) . For example:
-```
-...
--Xms2048m
--Xmx4096m
-...
-```
-
-Or just go to **Help**->**Change memory settings** in WebStorm menu bar and set required value.
-
-### Standalone RN Debugger
-
-1. Download from [here](https://github.com/jhen0409/react-native-debugger/)
-2. To enable debugging run your app on the emulator, press 'ctrl(cmd)+m' and choose this option
-3. If remote debugging is enabled, run the emulator before starting the app
-
-### Genimotion android emulator (vbox based)
-
-1. Download from [here](https://www.genymotion.com/download/)
-
-    ```
-    $ chmod +x genymotion-2.12.1-linux_x64.bin
-    ```
-2. Settings -> Adb tool connection settings -> Use custom android SDK tools
-3. Enable Google Play Services on the created device and install Google Chrome to be able to login
 
 <h1 id="setup_and_running">Setup and running</h1>
-## Special tips for Linux:
-
-1. point flow temp dir to shared memory
-
-```
-$ echo "export FLOW_TEMP_DIR=/dev/shm" >> ~/.bashrc
-$ source ~/.bashrc
-```
-
-2. run command to avoid ENOSPC
-
-```
-$ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-<a name="envconfig"></a>
-
-## Environment config
-
-Any app build use `.env` file to configure app behavior. See standard env config profiles in `env-profiles/[env-name].env`
-
-1. Copy `test` env profile to local `.env` config (on Windows you can use `copy <src> <dst>`):
-
-```
-$ cp env-profiles/test.env .env
-```
-
-2. On your local system it is also necessary to set up the version of the mobile app. To do so, open the file you've just have copied, and append with the following line:
-
-```
-APP_VERSION='1.7.0'
-```
-
-You can select newer versions - please ask the administrator for the particular version number.
-
-<a name="ssh"></a>
-
-## SSH
-
-Since recently, some packages (like "rupture") require ssh settings for github. To use them, please configure your ssh client:
-
-on Windows:
-
-```
-$ eval $(ssh-agent -s)
-```
-
-on Linux and other systems:
-
-```
-$ ssh-agent -s
-```
-
-then, execute the following command:
-
-```
-$ ssh-add ~/.ssh/id_rsa
-```
-
-If you store your secured key inside another folder, select your path to id_rsa-file.
 
 <a name="projectdeps"></a>
 
