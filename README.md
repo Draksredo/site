@@ -122,11 +122,12 @@ First, execute your application:
 
     ```bash
     $ npm run browser:build
-    ```
-
-- 2nd terminal - build native android app wrapper for development:
-
-    ```
     $ npm run browser:build:serve
+    ```
+
+- 2nd terminal - build the application shell for development:
+
+    ```
+    $ npm run browser:build:dev
     ```
 
