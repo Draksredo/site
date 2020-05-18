@@ -126,7 +126,7 @@ First, start the virtual device from the Android Studio. Then, execute your appl
 - 1st terminal - dev server:
 
     ```bash
-    $ npm run native:dev
+    $ npm run browser:build
     ```
 
     or, if you want to clear cache from previous launches, execute the following command:
