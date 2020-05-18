@@ -18,20 +18,13 @@
 The installation consists of the following software you will need to install on your local machine. It is necessary to install appropriate versions from the list to get evetything at work.
 (Tested on 18 may 2020, Windows 10)
 
-![Node](docs/images/badge-node.svg)
-![Npm](docs/images/badge-npm.svg)
-![React Native Debugger](docs/images/badge-rnd.svg)
-![Python](docs/images/badge-python.svg)
-![JDK](docs/images/badge-jdk.svg)
 
 | Necessary software                        | Version                                                    |
 | ----------------------------------------- | ---------------------------------------------------------- |
 | Node.js                                   | 12.16.3                                                    |
 | npm                                       | 6.14.4                                                     |
-| React Native Debugger                     | 0.10.0                                                     |
 | Git with git bash command prompt          | any                                                        |
 | IDE (WebStorm or Visual Studio Code)      | any                                                        |
-| **react-native** and **react-native-cli** | latest (will be installed automatically when using script) |
 
 
 <h2 id="global_dependencies">Global dependencies</h2>
@@ -58,12 +51,12 @@ The installation consists of the following software you will need to install on 
 1. [Install nvm with Brew](http://dev.topheman.com/install-nvm-with-homebrew-to-use-multiple-versions-of-node-and-iojs-easily/)
 2. Install the suitable version of node:
     ```
-    nvm install 10.13.0
+    nvm install 12.16.3
     ```
 
 ### NPM
 ```
-$ npm install -g npm@6.10.3
+$ npm install -g npm@6.14.4
 ```
 
 check it after installation:
@@ -103,37 +96,7 @@ $ npm i react-native react-native-cli -g
     ```
 > #### Clone the project
 > [How to clone a repository from Gitlab](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html#clone-a-repository)
-### Oracle Java
 
-- #### Ubuntu
-    ```
-    $ sudo add-apt-repository ppa:webupd8team/java
-    $ sudo apt-get update
-    $ sudo apt-get install oracle-java8-installer
-    ```
-
-- #### Windows
-
-1. Download from [the official site](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
-the appropriate version (`Java SE 8`) and install it.
-2. Specify path to the JDK (e.g. `C:\Program Files\Java\jdk1.8.0_201`) in a `JAVA_HOME` system environment variable
-and add `%JAVA_HOME%\bin` to the `PATH`.
-
-- #### Mac OS
-    Java 8 can only be installed with JDK (`brew cask install java` will give you the latest java version)
-    ```
-    brew cask install adoptopenjdk/openjdk/adoptopenjdk8
-    ```
-
-### VirtualBox (optional)
-https://www.virtualbox.org/wiki/Linux_Downloads
-```
-$ sudo vi /etc/apt/sources.list
-$ deb http://download.virtualbox.org/virtualbox/debian xenial contrib
-$ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
-$ sudo apt-get update
-$ sudo apt-get install virtualbox-5.2
-```
 
 <h2 id="ides">IDEs and tools</h2>
 <a name="android-studio"></a>
