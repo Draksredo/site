@@ -65,12 +65,6 @@ check it after installation:
 $ npm -v
 ```
 
-### React Native
-
-```
-$ npm i react-native react-native-cli -g
-```
-
 ### Git
 
 - #### Ubuntu
@@ -99,30 +93,7 @@ $ npm i react-native react-native-cli -g
 
 
 <h2 id="ides">IDEs and tools</h2>
-<a name="android-studio"></a>
 
-### Android Studio
-
-> Note: It is necessary to install Android Studio, because you will have to execute the application in a virtual device that will be created there.
-
-1. Follow the "React Native CLI Quickstart" tutorial in [the official guide](https://reactnative.dev/docs/environment-setup).
-
-2. [Create an Android Virtual Device (AVD)](https://developer.android.com/studio/run/managing-avds.html) with target OS version **Android 7.1.1** and screen resolution **720x1280.** (for detailed information see [this instruction](docs/studioGuide.md))
-
-    - target device: Samsung Galaxy j5 2017 (or equivalent)
-
-3. Create the `ANDROID_HOME` environment variable
-
-4. Create an `android/local.properties` file in the project and specify path to SDK in it:
-    ```
-    sdk.dir=</path/to/android/sdk>
-    ```
-
-    > Note: On Windows 10, you should set sdk.dir like the following(use escape characters):
-    >
-    > ```
-    > C\:\\path\\to\\android\\sdk
-    > ```
 ### VSCode
 1. Download from [here](https://code.visualstudio.com/)
 2. Get plugins: Beautify, ESLint, Flow language support, GitLens
